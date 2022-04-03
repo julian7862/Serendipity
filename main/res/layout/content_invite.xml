@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".A011_Invite.Invite"
+    tools:showIn="@layout/a11_invite">
+
+
+    <ListView
+        android:id="@+id/mylist"
+        android:layout_width="fill_parent"
+        android:layout_height="659dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="8dp"
+        android:divider="#18000000"
+        android:dividerHeight="1dp"></ListView>
+
+</LinearLayout>

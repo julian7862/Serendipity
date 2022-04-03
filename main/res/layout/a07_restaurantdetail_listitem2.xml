@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="70dp"
+        android:id="@+id/image_data"
+        android:layout_height="70dp"
+        android:layout_marginLeft="15dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="0"
+        android:src="@drawable/pic3"
+        app:civ_border="false" />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_toRightOf="@+id/image_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spicy Fried Rice &amp; Bacon"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:textColor="#202020"/>
+
+        <TextView
+            android:id="@+id/subtitle_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#919191"/>
+    </LinearLayout>
+
+<!--    <hyogeun.github.com.colorratingbarlib.ColorRatingBar-->
+<!--        android:id="@+id/rating_1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        style = "?android:attr/ratingBarStyleSmall"-->
+<!--        android:rating="3"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        app:changeable="false"-->
+<!--        app:empty_color="#B4B4B4"-->
+<!--        app:progress_color="#F4C900" />-->
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Amorim ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam. "/>
+
+
+</RelativeLayout>

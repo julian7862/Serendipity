@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Serendipity</string>
+    <string name="title_activity_tab_menu"></string>
+    <string name="title_activity_restaurant_list"></string>
+    <string name="title_activity_restaurant_listview"></string>
+    <string name="title_activity_order_history"></string>
+    <string name="title_activity_favorite"></string>
+    <string name="title_activity_notification"></string>
+    <string name="title_activity_all_category"></string>
+    <string name="title_activity_reviews"></string>
+    <string name="title_activity_payment_method"></string>
+    <string name="facebook_app_id">949891318809576</string>
+    <string name="fb_login_protocol_scheme">fb949891318809576</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="location_updated">Location Updated: %1$s</string>
+</resources>

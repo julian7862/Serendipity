@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".A014_Review.Reviews"
+    android:orientation="vertical"
+    tools:showIn="@layout/a14_reviews">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:text="20 REVIEWS"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp">
+
+
+        <ImageView
+            android:id="@+id/image_content"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/listimg1"/>
+
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/image_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spicy Fried Rice &amp; Bacon"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:textColor="#202020"/>
+
+            <TextView
+                android:id="@+id/time_content"
+                android:layout_below="@+id/name_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 hours ago"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:textColor="#CCCCCC"/>
+
+<!--            <hyogeun.github.com.colorratingbarlib.ColorRatingBar-->
+<!--                android:id="@+id/rating_1"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                style = "?android:attr/ratingBarStyleSmall"-->
+<!--                android:rating="3"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                app:changeable="false"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                app:empty_color="#B4B4B4"-->
+<!--                app:progress_color="#F4C900" />-->
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Amorim ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam. "/>
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/image_content2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/listimg2"/>
+
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/image_content2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shrimp Curry Burger Ips"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:textColor="#202020"/>
+
+            <TextView
+                android:id="@+id/time_content2"
+                android:layout_below="@+id/name_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 hours ago"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:textColor="#CCCCCC"/>
+
+<!--            <hyogeun.github.com.colorratingbarlib.ColorRatingBar-->
+<!--                android:id="@+id/rating_2"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                style = "?android:attr/ratingBarStyleSmall"-->
+<!--                android:rating="3"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                app:changeable="false"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                app:empty_color="#B4B4B4"-->
+<!--                app:progress_color="#F4C900" />-->
+
+            <TextView
+                android:id="@+id/content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_content2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Amorim ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam. "/>
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

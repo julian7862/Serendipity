@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A011_Invite.Invite">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffe107"
+        android:layout_centerHorizontal="true"
+
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="邀 請 朋 友"/>
+
+        <ImageButton
+            android:id="@+id/back_arrow"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back_arrow"
+            android:onClick="BackToDetail"/>
+
+        <ImageButton
+            android:id="@+id/send_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:foreground="@drawable/ripple"
+            android:background="@drawable/ic_send"
+            android:onClick="GoTime"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/content_invite" />
+
+</RelativeLayout>

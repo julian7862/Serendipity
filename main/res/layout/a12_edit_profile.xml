@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".A012_Profile.Edit_Profile"
+    android:background="#FFE107">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/ic_bg_edit">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="410dp">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:foreground="@drawable/ripple"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_back_arrow"
+                android:onClick="BackToProfile" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/image_data"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pic4"
+                app:civ_border="false"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="0" />
+
+            <Button
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_switch_bg_yellow"
+                android:text="相機" />
+
+            <Button
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_edit_bg_green"
+                android:text="相簿" />
+
+            <!--            <Button-->
+<!--                android:id="@+id/back"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="bottom|left"-->
+<!--                android:layout_marginStart="60dp"-->
+<!--                android:layout_marginBottom="45dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/ic_bg_enter"-->
+<!--                android:text="取消"-->
+<!--                android:onClick="BackToProfile" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/input_layout_username"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="80dp">-->
+                <!--                android:theme="@style/TextLabel"-->
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_username"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="70dp"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <Button
+                android:id="@+id/enter"
+                android:background="@drawable/ic_bg_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送出"
+                android:layout_weight="1"
+                android:layout_marginBottom="60dp"
+                android:layout_gravity="bottom|center_horizontal"
+                />
+        </FrameLayout>
+    </FrameLayout>
+
+
+
+</RelativeLayout>

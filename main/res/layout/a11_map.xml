@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    tools:context=".A011_Map.Map">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffe107"
+        android:layout_centerHorizontal="true"
+
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="M A P"/>
+
+        <ImageButton
+            android:id="@+id/map_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:foreground="@drawable/ripple"
+            android:background="@drawable/ic_map_noti"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/map_frame"
+        android:layout_centerVertical="true"
+        android:background="#FFFFFF">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="690dp"
+            android:layout_alignParentBottom="true"
+            tools:context="com.example.menu.A07_RestaurantDetail" />
+
+
+        <!--            tools:context="com.example.menu.A07_RestaurantDetail"-->
+    </RelativeLayout>
+
+</RelativeLayout>

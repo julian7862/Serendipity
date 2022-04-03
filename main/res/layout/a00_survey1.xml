@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".A00_Intro.Survey1"
+    android:background="#FFE107">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/ic_bg_edit">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="490dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/image_data"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/pic4"
+                app:civ_border="false"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="0" />
+
+            <Button
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_switch_bg_yellow"
+                android:text="相機" />
+
+            <Button
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_edit_bg_green"
+                android:text="相簿" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_username"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="90dp"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/input_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_bg_enter"
+                android:text="next >>" />
+
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="360dp">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="45dp"
+                android:buttonTint="#2B90D9"
+                android:text="男"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#2B90D9"
+                android:text="女"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+    </FrameLayout>
+
+</RelativeLayout>

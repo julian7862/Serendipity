@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:layout_marginTop="2dp"
+            android:textStyle="bold"
+            android:text="R E C O M M A N D"/>
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/go_btn"-->
+<!--            android:layout_width="35dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_marginTop="7dp"-->
+<!--            android:layout_marginLeft="315dp"-->
+<!--            android:background="@drawable/rounded_button3"-->
+<!--            android:src="@drawable/ic_go_black"-->
+<!--            android:foreground="@drawable/ripple"/>-->
+
+    </FrameLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_marginTop="570dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_dis"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/dis"/>-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_heart"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:background="@drawable/heart"/>-->
+
+<!--    </LinearLayout>-->
+
+    <com.huxq17.swipecardsview.SwipeCardsView
+        android:id="@+id/SwipeCardsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:alphaOffsetStep="20"
+        app:scaleOffsetStep="0.08"
+        app:yOffsetStep="20dp"></com.huxq17.swipecardsview.SwipeCardsView>
+
+</FrameLayout>
